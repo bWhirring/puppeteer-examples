@@ -130,7 +130,7 @@ const iPhone = devices["iPhone 6"];
 
 ### 4.自动化表单提交, 输入
 
-在这里我们模拟一下京东的登录, 为了能更好的看到整个过程, 我们使用 `headless: false` 来关闭 headless 模式,看一下整个的登录流程
+在这里我们模拟一下github的登录, 为了能更好的看到整个过程, 我们使用 `headless: false` 来关闭 headless 模式,看一下整个的登录流程
 
 ```
 (async () => {
@@ -147,6 +147,8 @@ const iPhone = devices["iPhone 6"];
   await page.click("input[type=submit]"); //点击登录按钮
 })()
 ```
+执行`node dist/login.js`
+![gif](https://user-gold-cdn.xitu.io/2018/7/26/164d4a17dc0af97f?w=2880&h=1800&f=gif&s=3419231)
 
 ### 5.站点时间线追踪
 
